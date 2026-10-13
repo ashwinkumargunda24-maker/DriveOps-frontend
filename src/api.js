@@ -2,7 +2,7 @@ import axios from "axios";
 
 const apiBaseURL = (
   process.env.REACT_APP_API_BASE_URL ||
-  "http://localhost:8081/api"
+  "https://driveops-backend-1.onrender.com/api"
 ).trim();
 
 const api = axios.create({

@@ -16,10 +16,10 @@ You may also see any lint errors in the console.
 
 ## Backend API URL
 
-The frontend uses `REACT_APP_API_BASE_URL` as its API base URL. For local development, the default remains `http://localhost:8081/api`. To target another backend, set the variable before starting or building the frontend. For example, in PowerShell:
+The frontend uses `REACT_APP_API_BASE_URL` as its API base URL. By default, it uses the deployed backend at `https://driveops-backend-1.onrender.com/api`. To target another backend, set the variable before starting or building the frontend. For example, in PowerShell:
 
 ```powershell
-$env:REACT_APP_API_BASE_URL = "https://api.example.com/api"
+$env:REACT_APP_API_BASE_URL = "https://driveops-backend-1.onrender.com/api"
 npm start
 ```
 

@@ -27,8 +27,8 @@ test("uses the configured API base URL and removes trailing slashes", () => {
   expect(api.defaults.baseURL).toBe("https://api.example.com/api")
 })
 
-test("retains the local backend URL when no API base URL is configured", () => {
+test("uses the deployed backend URL when no API base URL is configured", () => {
   const api = loadApiWithBaseUrl(undefined)
 
-  expect(api.defaults.baseURL).toBe("http://localhost:8081/api")
+  expect(api.defaults.baseURL).toBe("https://driveops-backend-1.onrender.com/api")
 })
